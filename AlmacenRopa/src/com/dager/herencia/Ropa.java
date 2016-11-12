@@ -1,10 +1,18 @@
 package com.dager.herencia;
 
 public class Ropa {
+	
 	private int id;
 	private double precio;
 	private String talla;
 	private String color;
+	
+	public Ropa(int id,double precio,String talla,String color) {
+		this.id = id;
+		this.precio = precio;
+		this.talla = talla;
+		this.color = color;
+	}
 	
 	
 	public int getId() {
@@ -40,7 +48,7 @@ public class Ropa {
 	}
 	
 	public void mostrarDatos(String nombreClase){
-		System.out.println("nombreClase");
+		System.out.println(nombreClase);
 		System.out.println("Id: " + getId());
 		System.out.println("Precio: " + getPrecio());
 		System.out.println("Talla: " + getTalla());
